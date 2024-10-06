@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .font-roboto {
+        font-family: "Roboto", sans-serif;
+    }
+</style>
+
+<body class="font-roboto">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2">
+                            <li><a>HOME</a></li>
+                            <li><a>SHOP</a></li>
+                            <li><a>NEWZ</a></li>
+                            <li><a>CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl ">BIKE<span class="text-error">
+                            HUB</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>HOME</a></li>
+                        <li><a>SHOP</a></li>
+                        <li><a>NEWZ</a></li>
+                        <li><a>CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn btn-error text-white">LOGIN</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider or carusal  -->
+        <section>
+            <div class=" flex flex-col lg:flex-row lg:gap-40 p-4 lg:p-20">
+                <div>
+                    <p class="">Computer-controlled digital transistorized with</p>
+                    <h1 class="text-4xl font-bold">Honda CBR 300R</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class="btn btn-error text-white">Purchase</button>
+                </div>
+                <div>
+                    <div class="carousel h-[280px] lg:h-[380px] w-full">
+                        <div id="item1" class="carousel-item w-full">
+
+                            <img src="images/slider/bike1.png" alt="">
+                        </div>
+                        <div id="item2" class="carousel-item w-full">
+                            <img src="images/slider/bike2.png" alt="">
+                        </div>
+                        <div id="item3" class="carousel-item w-full">
+                            <img src="images/slider/bike3.png" alt="">
+                        </div>
+                        <div id="item4" class="carousel-item w-full">
+                            <img src="images/slider/bike4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-center gap-2 py-2">
+                        <a href="#item1" class="btn btn-xs">1</a>
+                        <a href="#item2" class="btn btn-xs">2</a>
+                        <a href="#item3" class="btn btn-xs">3</a>
+                        <a href="#item4" class="btn btn-xs">4</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest bikes -->
+        <section class="lg:m-10">
+            <h1 class="text-3xl lg:text-4xl font-semi-bold text-center p-5">Latest Bikes</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- frist bike -->
+                <div class="card bg-base-100 w-96 shadow-xl border border-gray-400">
+                    <figure>
+                        <img src="images/others/latest1.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-error">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second bike -->
+                <div class="card bg-base-100 w-96 shadow-xl border border-gray-400">
+                    <figure>
+                        <img src="images/others/latest2.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Motorcycles & Scooters!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-error">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third bike -->
+                <div class="card bg-base-100 w-96 shadow-xl border border-gray-400">
+                    <figure>
+                        <img src="images/others/latest3.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">2021 Honda CBR500R!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-error">Buy Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- happy clients section -->
+        <section class="lg:m-10">
+            <h1 class="text-3xl lg:text-4xl font-semi-bold text-center p-5 lg:pb-10">Happy <span class="text-error">
+                    Clients
+                    says</span></h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- frist card -->
+                <div class="card bg-base-100 w-96 shadow-xl  border border-gray-400">
+                    <figure>
+                        <img class="w-36 pt-5" src="images/others/user-1.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info"> Regina Miles</h4>
+                            <p> Banker </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 w-96 shadow-xl  border border-gray-400">
+                    <figure>
+                        <img class="w-36 pt-5" src="images/others/user-2.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info"> Mrs.Sara</h4>
+                            <p> Model </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 w-96 shadow-xl  border border-gray-400">
+                    <figure>
+                        <img class="w-36 pt-5" src="images/others/user-3.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info"> The Rock</h4>
+                            <p> Repoter </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
